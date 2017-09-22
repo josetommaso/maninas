@@ -15,7 +15,7 @@ body {
 .header {
 	font-size: smaller;
 	background: #a5dad6;
-	padding-right: 5px;
+	/*padding-right: 5px;*/
 }
 
 .mr-sm-2, .my-2 {
@@ -38,7 +38,7 @@ body {
 
 .nav-main {
 	font-weight: 700;
-	padding-top: 30px;
+	padding-top: 36px;
 }
 
 .nav-main .nav {
@@ -105,14 +105,13 @@ body {
 	padding-left: 0;
 }
 
-.gallery {
+.card-deck {
 	padding-bottom: 10px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
-.card-img-top {
-	padding: 10px;
-	border-radius: 5px;
+.card-title {
+	text-align: center;
 }
 
 .card {

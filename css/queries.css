@@ -1,0 +1,145 @@
+@media screen and (max-width: 1199px) {
+	.text-image {
+		top: 85px;
+		left: 651px;
+	}
+	.text-image h3 {
+		font-size: 39px;
+	}
+	.text-image p {
+		font-size: 16px;
+	}
+	.btn-discount {
+		font-size: 19px;
+	}
+	.card {
+		height: 311px;
+	}
+	.text-muted {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.logo-top {
+		width: 141px;
+	}
+	.nav-main {
+		padding-top: 15px;
+	}
+	.text-image {
+		top: 35px;
+		left: 503px;
+	}
+	.text-image h3 {
+		font-size: 27px;
+	}
+	.text-image p {
+		font-size: 13px;
+	}
+	.btn-discount {
+		font-size: 16px;
+	}
+	.card {
+		height: 228px;
+	}
+	.card-deck .card {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.card-body {
+		padding-top: 7px;
+	}
+	.card-title {
+		font-size: 19px;
+		margin-bottom: 5px;
+	}
+	.card-text {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.row-header {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	.logo-top {
+		width: 110px;
+	}
+	.nav-main {
+		font-weight: 400;
+		padding-top: 5px;
+	}
+	.nav-main .nav-link {
+		border: none;
+		font-size: 15px;
+	}
+	.nav-main .nav-link:hover {
+		font-size: 17px;
+	}
+	.text-image {
+		top: 10px;
+		left: 373px;
+	}
+	.text-image h3 {
+		font-size: 20px;
+		margin-bottom: 2px;
+		margin-left: 34px;
+	}
+	.text-image p {
+		font-size: 11px;
+		line-height: 15px;
+		font-weight: 700;
+		letter-spacing: 0px;
+		margin-bottom: 5px;
+	}
+	.btn-discount {
+		font-size: 11px;
+	}
+	.steps {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.text-before {
+		padding-top: 8px;
+		padding-bottom: 4px;
+	}
+	.text-left {
+		font-size: 16px;
+	}
+	.card-body {
+		padding: 0.25em;
+	}
+	.card {
+		height: 197px;
+	}
+	footer {
+		padding-top: 0px;
+	}
+	.navbar {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 575px) {
+	.main {
+		display: none;
+	}
+	.steps {
+		display: none;
+	}
+	.card-content {
+		justify-content: center;
+	}
+	.card {
+		margin-top: 20px;
+		margin-bottom: 100px;
+		text-align: center;
+	}
+	.card-title {
+		margin-top: 10px;
+	}
+
+}

@@ -11,27 +11,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Roboto" rel="stylesheet">
 	<title>Maninas Market</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/queries.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
 <div class="container-fluid">
 <header>
 	<div class="container">
-		<div class="row justify-content-end header">
-			<ul class="nav">
-  				<li class="nav-item">
-    				<a class="nav-link nav-top" href="#">SIGN IN</a>
-  				</li>
-  				<li class="nav-item">
-    				<a class="nav-link nav-top" href="#">REGISTER</a>
-  				</li>
-  				<li class="nav-item">
-    				<a class="nav-link nav-top" href="#">(0) ITEMS IN CART</a>
-  				</li>
-			</ul>
-			<form class="form-inline">
-    			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  			</form>
+		<div class="row justify-content-center header">
+			<div class="col-12">
+				<ul class="nav">
+	  				<li class="nav-item">
+	    				<a class="nav-link nav-top" href="#">SIGN IN</a>
+	  				</li>
+	  				<li class="nav-item">
+	    				<a class="nav-link nav-top" href="#">REGISTER</a>
+	  				</li>
+	  				<li class="nav-item">
+	    				<a class="nav-link nav-top" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;0 ITEMS IN CART</a>
+	  				</li>
+				</ul>
+  			</div>
 		</div>
 	</div>
 	<div class="container">
@@ -70,7 +72,7 @@
 					<div class="col-4 text-image">
 						<h3>10% OFF</h3>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-						<button type="button" class="btn btn-success btn-lg">Get Discount</button>
+						<button type="button" class="btn btn-success btn-lg btn-discount">Get Discount</button>
 					</div>
 				</div>
 			</div>
@@ -95,87 +97,75 @@
 				<h5 class="text-left">PRODUCTS ON OFFER</h5>
 			</div>
 			<div class="container">
-				<div class="row justify-content-space">
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+				<div class="row justify-content-space card-content">
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row justify-content-space">
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-3 gallery">
-						<div class="card" style="width: 16rem;">
-	  						<img class="card-img-top" src="http://lorempixel.com/200/200/" alt="Card image cap">
-	  						<div class="card-body">
-	    						<h4 class="card-title">Card title</h4>
-	    						<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-	    						<a href="#" class="btn btn-primary">Go somewhere</a>
-	  						</div>
+						<div class="card">
+							<img class="card-img-top" src="http://lorempixel.com/g/300/200/" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">Card title</h4>
+								<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							</div>
 						</div>
 					</div>
 				</div>
